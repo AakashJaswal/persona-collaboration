@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="en" style="padding:30px;">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Personal Collaboration</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+ 
+<script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-3.0.0.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  
+  </script>
+   <style type="text/css">.thumb-image {height:150px;width:150px;padding:5px;}
+   .tab-Image, .tab-name, .tab-age, .tab-occupation, .tab-goals, .othermain {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+   }
+  </style>
+   <style type="text/css"> .Image5 {padding:5px;}
+  </style><!--neww code-->
+  <style type="text/css">
+   input {font-weight:bold;}
+   body{background-color:#666fd1; }
+   h1{color:white;}
+  tabs{ padding-left:40px;}
+  
+  .txt {
+    margin: 5px 0;
+    display: block;
+  }
+</style>
+</head>
+<body background="1.jpg">
+ <h1> <center>Persona Collaboration</center></h1>
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Shared Workspace</a></li>
+    <li><a href="#tabs-2">User 1</a></li>
+    <li><a href="#tabs-3">User 2</a></li>
+	 <li><a href="#tabs-4">User3</a></li>
+	  <li><a href="#tabs-5">User 4</a></li>
+	  <li><a href="#tabs-6">User 5</a></li>
+	 <li><a href="#tabs-7">User 6</a></li>
+	  <li><a href="#tabs-8">User 7</a></li>
+	  <li><a href="#tabs-9">User 8</a></li>
+	  
+  </ul>
+  <div id="tabs-1">
+   <h2><center>Brief :</center></h2> 
+
+
+<div class="tab-Image"> </div><br>
+  <br>
+<br>
+  <br>
+  <br>
+  <br>
+  <br>
+  
+  <div class="tab-name"> </div><br>
+  <br>
+   <div class="tab-age"></div> <br>
+  <br>
+    <div class="tab-occupation"> </div> <br>
+  <br>
+	 <div class="tab-goals">   </div> <br>
+  <br>
+    <br>
+	 <div class="othermain"> </div> <br>
+  <br>
+   </div>
+   
+  <div id="tabs-2" class="tab-2" style="padding-left:40px;">
+   <h2><center>Enter The Fields Below :</center></h2>
+
+<!--neww code-->
+
+  <h3>Select Photo :</h3>
+	<div id="wrapper" class="Image" style="margin-top: 20px;"><input data-user="1" id="fileUp1" type="file"/><input type="button" class="Image5" value="X" /><input class="btn-i" type="button"  data-user="1" value="Upload" id="x1" />
+<div id="tab1-img" class="Image" ></div></div>
+
+<!--neww code-->
+
+      <div class="txt"><input  class="name" placeholder="Enter the Name" id="n1" type="text" name="name" /><input type="button"  class="name5" value="X" /><input class="btn-n" type="button" value="Upload" data-user="1" /></div>
+      <div class="txt"><input class="age" placeholder="Enter the Age" type="text" name="age" /><input type="button"  class="age5" value="X"/><input class="btn-a" type="button" value="Upload" data-user="1" /></div>
+      <div class="txt"><input class="occupation" placeholder="Enter the Occupation" type="text" name="occupation" /><input type="button"  class="occupation5" value="X" /><input class="btn-o" type="button"  value="Upload" data-user="1" /></div>
+      <div class="txt"><input  class="goals" placeholder="Enter the Goals" type="text" name="goals" /><input type="button"  class="goals5" value="X" /><input class="btn-g" type="button"  value="Upload" data-user="1" /></div>
+      <input type="button"  class="ad1" value="Add Field"/>
+
+
+
+ <div class = "other" style="display: none;" >
+ <div class="other" id="oth"><input  class="other" type="text" name="hi" placeholder="Enter the field" /><input type="button"  class="1" value="X" style="width:30px;height:25px;" /><input class="btn-ot" type="button"  value="Upload" data-user="1" /></div>
+ </div> <div class="others1"> </div>
+
+</div>
+
+ <div id="tabs-3" class="tab-3" style="padding-left:40px;">
+ <h2><center>Enter The Fields Below :</center></h2>
+
+  <h3>Select Photo :</h3>
+<!--neww code-->
+
+	<div id="wrapper" class="Image" style="margin-top: 20px;"><input data-user="2" id="fileUp2" type="file"/><input type="button" class="Image5" value="X"  /><input class="btn-i"  data-user="2" type="button"value="Upload" id="x2"/>
+
+<div id="tab2-img" class="Image"></div></div>
+
+<!--neww code-->
+
+     <div class="txt"><input  class="name" placeholder="Enter the Name" id="n1" type="text" name="name" ><input type="button"  class="name5" value="X"/><input class="btn-n" type="button" value="Upload" data-user="2" /></div>
+
+   <div class="txt"><input class="age" placeholder="Enter the Age" type="text" name="age" ><input type="button"  class="age5" value="X"/><input class="btn-a" type="button"  value="Upload" data-user="2" /></div>
+
+    <div class="txt"><input class="occupation" placeholder="Enter the Occupation" type="text" name="occupation" ><input type="button"  class="occupation5" value="X"/><input class="btn-o" type="button"  value="Upload" data-user="2" /></div>
+
+  <div class="txt"><input  class="goals" placeholder="Enter the Goals" type="text" name="goals" ><input type="button"  class="goals5" value="X"/><input class="btn-g" type="button"  value="Upload" data-user="2" /></div>
+
+
+
+
+   <input type="button"  class="ad2" value="Add Field"/>
+
+
+ <div class = "other" style="display: none;" >
+ <div class="other" id="oth"><input  class="other" type="text" name="hi" placeholder="Enter the field"><input type="button"  class="1" value="X" style="width:30px;height:25px;"/><input class="btn-ot" type="button"  value="Upload" data-user="2" /></div>
+ </div><div class="others2"> </div>
+ </div>
+
+
+  <div id="tabs-4" class="tab-4" style="padding-left:40px;">
+  <h2><center>Enter The Fields Below :</center></h2>
+
+  <h3>Select Photo :</h3>
+<!--neww code-->
+
+	<div id="wrapper" class="Image" style="margin-top: 20px;"><input id="fileUp3" data-user="3" type="file"/><input type="button" class="Image5" value="X"  /><input class="btn-i" data-user="3" type="button"value="Upload" id="x3"/></input>
+
+<div id="tab3-img" class="Image"></div></div>
+
+<!--neww code-->
+
+     <div class="txt"><input  class="name" placeholder="Enter the Name" id="n1" type="text" name="name" ><input type="button"  class="name5" value="X"/><input class="btn-n" type="button"  value="Upload" data-user="3" /></div>
+
+   <div class="txt"><input class="age" placeholder="Enter the Age" type="text" name="age" ><input type="button"  class="age5" value="X"/><input class="btn-a" type="button"  value="Upload" data-user="3" /></div>
+
+    <div class="txt"><input class="occupation" placeholder="Enter the Occupation" type="text" name="occupation" ><input type="button"  class="occupation5" value="X"/><input class="btn-o" type="button"  value="Upload" data-user="3" /></div>
+
+  <div class="txt"><input  class="goals" placeholder="Enter the Goals" type="text" name="goals" ><input type="button"  class="goals5" value="X"/><input class="btn-g" type="button"  value="Upload" data-user="3" /></div>
+
+
+
+
+   <input type="button"  class="ad3" value="Add Field"/>
+
+
+
+ <div class = "other" style="display: none;" >
+ <div class="other" id="oth"><input  class="other" type="text" name="hi" placeholder="Enter the field"><input type="button"  class="1" value="X" style="width:30px;height:25px;"/><input class="btn-ot" type="button"  value="Upload" data-user="3" /></div>
+ </div> <div class="others3"> </div>
+
+  </div>
+  <div id="tabs-5" class="tab-5" style="padding-left:40px;">
+ <h2><center>Enter The Fields Below :</center></h2>
+ <h3>Select Photo :</h3>
+<!--neww code-->
+
+	<div id="wrapper" class="Image" style="margin-top: 20px;"><input id="fileUp4" data-user="4" type="file"/><input type="button" class="Image5" value="X" /><input class="btn-i" data-user="4" type="button"value="Upload" id="x4"/>
+
+<div id="tab4-img" class="Image"></div></div>
+
+<!--neww code-->
+
+     <div class="txt"><input  class="name" placeholder="Enter the Name" id="n1" type="text" name="name" ><input type="button"  class="name5" value="X"/><input class="btn-n" type="button"  value="Upload" data-user="4" /></div>
+
+   <div class="txt"><input class="age" placeholder="Enter the Age" type="text" name="age" ><input type="button"  class="age5" value="X"/><input class="btn-a" type="button"  value="Upload" data-user="4"/></div>
+
+    <div class="txt"><input class="occupation" placeholder="Enter the Occupation" type="text" name="occupation" ><input type="button"  class="occupation5" value="X"/><input class="btn-o" type="button"  value="Upload" data-user="4" /></div>
+
+  <div class="txt"><input  class="goals" placeholder="Enter the Goals" type="text" name="goals" ><input type="button"  class="goals5" value="X"/><input class="btn-g" type="button"  value="Upload" data-user="4" /></div>
+
+
+
+   <input type="button"  class="ad4" value="Add Field"/>
+
+
+
+  <div class = "other" style="display: none;" >
+ <div class="other" id="oth"><input  class="other" type="text" name="hi" placeholder="Enter the field"><input type="button"  class="1" value="X" style="width:30px;height:25px;"/><input class="btn-ot" type="button"  value="Upload" data-user="4" /></div>
+ </div> <div class="others4"> </div>
+
+  </div>
+
+  <div id="tabs-6" class="tab-6" style="padding-left:40px;" >
+ <h2><center>Enter The Fields Below :</center></h2>
+ <h3>Select Photo :</h3>
+<!--neww code-->
+
+	<div id="wrapper" class="Image" style="margin-top: 20px;"><input id="fileUp5" data-user="5" type="file"/><input type="button" class="Image5" value="X"  /><input class="btn-i" data-user="5" type="button"value="Upload" id="x5"/>
+
+<div id="tab5-img" class="Image"></div></div>
+
+<!--neww code-->
+
+     <div class="txt"><input  class="name" placeholder="Enter the Name" id="n1" type="text" name="name" ><input type="button"  class="name5" value="X"/><input class="btn-n" type="button"  value="Upload" data-user="5" /></div>
+
+   <div class="txt"><input class="age" placeholder="Enter the Age" type="text" name="age" ><input type="button"  class="age5" value="X"/><input class="btn-a" type="button"  value="Upload" data-user="5" /></div>
+
+    <div class="txt"><input class="occupation" placeholder="Enter the Occupation" type="text" name="occupation" ><input type="button"  class="occupation5" value="X"/><input class="btn-o" type="button"  value="Upload" data-user="5" /></div>
+
+  <div class="txt"><input  class="goals" placeholder="Enter the Goals" type="text" name="goals" ><input type="button"  class="goals5" value="X"/><input class="btn-g" type="button"  value="Upload" data-user="5" /></div>
+
+
+
+   <input type="button"  class="ad5" value="Add Field"/>
+
+
+ <div class = "other" style="display: none;" >
+ <div class="other" id="oth"><input  class="other" type="text" name="hi" placeholder="Enter the field"><input type="button"  class="1" value="X" style="width:30px;height:25px;"/><input class="btn-ot" type="button"  value="Upload" data-user="5" /></div>
+ </div><div class="others5"> </div>
+
+  </div>
+
+  <div id="tabs-7" class="tab-7" style="padding-left:40px;">
+  <h2><center>Enter The Fields Below :</center></h2>
+ <h3>Select Photo :</h3>
+<!--neww code-->
+
+	<div id="wrapper" class="Image" style="margin-top: 20px;"><input id="fileUp6" data-user="6" type="file"/><input type="button" class="Image5" value="X"  /><input class="btn-i" data-user="6" type="button"value="Upload" id="x6"/>
+
+<div id="tab6-img" class="Image"></div></div>
+
+<!--neww code-->
+
+     <div class="txt"><input  class="name" placeholder="Enter the Name" id="n1" type="text" name="name" ><input type="button"  class="name5" value="X"/><input class="btn-n" type="button"  value="Upload" data-user="6" /></div>
+
+   <div class="txt"><input class="age" placeholder="Enter the Age" type="text" name="age" ><input type="button"  class="age5" value="X"/><input class="btn-a" type="button"  value="Upload" data-user="6" /></div>
+
+    <div class="txt"><input class="occupation" placeholder="Enter the Occupation" type="text" name="occupation" ><input type="button"  class="occupation5" value="X"/><input class="btn-o" type="button"  value="Upload" data-user="6" /></div>
+
+  <div class="txt"><input  class="goals" placeholder="Enter the Goals" type="text" name="goals" ><input type="button"  class="goals5" value="X"/><input class="btn-g" type="button"  value="Upload" data-user="6"/></div>
+
+
+
+    <input type="button"  class="ad6" value="Add Field"/>
+
+
+ <div class = "other" style="display: none;" >
+ <div class="other" id="oth"><input  class="other" type="text" name="hi" placeholder="Enter the field"><input type="button"  class="1" value="X" style="width:30px;height:25px;"/><input class="btn-ot" type="button"  value="Upload" data-user="6" /></div>
+ </div><div class="others6"> </div>
+  </div>
+
+  <div id="tabs-8" class="tab-8" style="padding-left:40px;">
+  <h2><center>Enter The Fields Below :</center></h2>
+ <h3>Select Photo :</h3>
+<!--neww code-->
+
+	<div id="wrapper" class="Image" style="margin-top: 20px;"><input id="fileUp7" data-user="7" type="file"/><input type="button" class="Image5" value="X" /><input class="btn-i" data-user="7" type="button"value="Upload"id="x7" />
+
+<div id="tab7-img" class="Image"></div></div>
+
+<!--neww code-->
+
+     <div class="txt"><input  class="name" placeholder="Enter the Name" id="n1" type="text" name="name" ><input type="button"  class="name5" value="X"/><input class="btn-n" type="button"  value="Upload" data-user="7" /></div>
+
+   <div class="txt"><input class="age" placeholder="Enter the Age" type="text" name="age" ><input type="button"  class="age5" value="X"/><input class="btn-a" type="button"  value="Upload" data-user="7" /></div>
+
+    <div class="txt"><input class="occupation" placeholder="Enter the Occupation" type="text" name="occupation" ><input type="button"  class="occupation5" value="X"/><input class="btn-o" type="button"  value="Upload" data-user="7" /></div>
+
+  <div class="txt"><input  class="goals" placeholder="Enter the Goals" type="text" name="goals" ><input type="button"  class="goals5" value="X"/><input class="btn-g" type="button"  value="Upload" data-user="7"/></div>
+
+
+
+ <input type="button"  class="ad7" value="Add Field"/>
+
+
+   <div class = "other" style="display: none;" >
+ <div class="other" id="oth"><input  class="other" type="text" name="hi" placeholder="Enter the field"><input type="button"  class="1" value="X" style="width:30px;height:25px;"/><input class="btn-ot" type="button"  value="Upload" data-user="7" /></div>
+ </div> <div class="others7"> </div>
+  </div>
+  <div id="tabs-9" class="tab-9" style="padding-left:40px;">
+ <h2><center>Enter The Fields Below :</center></h2>
+ <h3>Select Photo :</h3>
+<!--neww code-->
+
+	<div id="wrapper" class="Image" style="margin-top: 20px;"><input id="fileUp8" data-user="8" type="file"/><input type="button" class="Image5" value="X" /><input class="btn-i" data-user="8" type="button"value="Upload" id="x8"/>
+
+<div id="tab8-img" class="Image"></div></div>
+
+<!--neww code-->
+
+     <div class="txt"><input  class="name" placeholder="Enter the Name" id="n1" type="text" name="name" ><input type="button"  class="name5" value="X"/><input class="btn-n" type="button"  value="Upload" data-user="8" /></div>
+
+   <div class="txt"><input class="age" placeholder="Enter the Age" type="text" name="age" ><input type="button"  class="age5" value="X"/><input class="btn-a" type="button"  value="Upload" data-user="8" /></div>
+
+    <div class="txt"><input class="occupation" placeholder="Enter the Occupation" type="text" name="occupation" ><input type="button"  class="occupation5" value="X"/><input class="btn-o" type="button"  value="Upload" data-user="8" /></div>
+
+  <div class="txt"><input  class="goals" placeholder="Enter the Goals" type="text" name="goals" ><input type="button"  class="goals5" value="X"/><input class="btn-g" type="button"  value="Upload" data-user="8"/></div>
+
+
+
+   <input type="button"  class="ad8" value="Add Field"/>
+
+
+ <div class = "other" style="display: none;" >
+ <div class="other" id="oth"><input  class="other" type="text" name="hi" placeholder="Enter the field"><input type="button"  class="1" value="X" style="width:30px;height:25px;"/><input class="btn-ot" type="button"  value="Upload" data-user="8" /></div>
+ </div>
+ <div class="others8"> </div>
+
+  </div>
+</div>
+ <h1> TCS Project</h1>
+</body>
+<script>
+
+$(document).ready(function() {
+        $("input[type=file]").on('change', function(e) {
+          //Get count of selected files
+		  console.log("hello" + e.target.getAttribute("data-user"));
+          //var countFiles = $(this)[0].files.length;
+          var imgPath = $(this)[0].value;
+          var extn = imgPath.substring(imgPath.lastIndexOf('.') + 1).toLowerCase();
+          var image_holder = $("#tab" + e.target.getAttribute("data-user") + "-img");
+          image_holder.empty();
+          if (extn == "gif" || extn == "png" || extn == "jpg" || extn == "jpeg") {
+            if (typeof(FileReader) != "undefined") {
+              //loop for each file selected for uploaded.
+              //for (var i = 0; i < countFiles; i++) 
+              //{
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                  $("<img />", {
+                    "src": e.target.result,
+                    "class": "thumb-image"
+                  }).appendTo(image_holder);
+                }
+                image_holder.show();
+                $('#x1').show();
+				//console.log($(this)[0].files[i]);
+                reader.readAsDataURL($(this)[0].files[0]);
+              //}
+            } else {
+              alert("This browser does not support FileReader.");
+            }
+          } else {
+            alert("Pls select only images");
+          }
+        });
+      });
+
+$( ".btn-i" ).click(function(e) {
+
+var box = document.createElement("div");
+box.setAttribute("style", "display: flex; flex-flow: row nowrap; justify-content: flex-start; align-items: flex-start;");
+
+if (document.getElementById("fileUp" + e.target.getAttribute("data-user")).value != "") {
+//$(this).parent().find(".Image").clone(true,true).appendTo('.tab-Image');
+var img = document.createElement("img");
+img.setAttribute("src",e.target.nextElementSibling.firstElementChild.getAttribute("src"));
+img.setAttribute("class", "thumb-image");
+
+box.appendChild(img);
+$(this).parent().find(".Image5").clone(true,true).appendTo(box);
+document.getElementsByClassName("tab-Image")[0].appendChild(box);
+
+
+ //$(this).parent().filter("#wrapper").remove();
+$(".tab-Image img").prop("hidden", false);
+//$("#fileUp" + e.target.getAttribute("data-user")).val("");
+}
+	});
+
+$( ".ad1" ).click(function() {
+$(this).siblings(".other").children("div.other").clone(true,true).appendTo('.others1');
+	}); 
+	
+	$( ".ad2" ).click(function() {
+$(this).siblings(".other").children("div.other").clone(true,true).appendTo('.others2');
+	});
+	
+	$( ".ad3" ).click(function() {
+$(this).siblings(".other").children("div.other").clone(true,true).appendTo('.others3');
+	});
+	
+	$( ".ad4" ).click(function() {
+$(this).siblings(".other").children("div.other").clone(true,true).appendTo('.others4');
+	});
+	
+	$( ".ad5" ).click(function() {
+$(this).siblings(".other").children("div.other").clone(true,true).appendTo('.others5');
+	});
+	
+	$( ".ad6" ).click(function() {
+$(this).siblings(".other").children("div.other").clone(true,true).appendTo('.others6');
+	});
+	
+	$( ".ad7" ).click(function() {
+$(this).siblings(".other").children("div.other").clone(true,true).appendTo('.others7');
+	});
+	
+	$( ".ad8" ).click(function() {
+$(this).siblings(".other").children("div.other").clone(true,true).appendTo('.others8');
+		});
+	
+	
+	
+	
+	
+	$( ".btn-ot" ).click(function(e) {
+var box = document.createElement("div");
+box.setAttribute("style", "display: flex; flex-flow: row nowrap; justify-content: flex-start; align-items: flex-start;");
+
+e.target.disabled = true;
+  $(this).parent().find(".other").prop("disabled", true);
+  //$(this).parent().find(".1").prop("disabled", true); 
+$(this).parent().find(".other").clone().appendTo(box);
+$(this).parent().find(".1").clone(true).appendTo(box);
+$("<div id=\"divCheckbox\" style=\"display: none;\">").appendTo(box);
+//e.target.previousElementSibling.previousElementSibling.value = "";
+ 
+document.getElementsByClassName("othermain")[0].appendChild(box);
+	});
+
+$( ".btn-n" ).click(function(e) {
+var box = document.createElement("div");
+box.setAttribute("style", "display: flex; flex-flow: row nowrap; justify-content: flex-start; align-items: flex-start;");
+e.target.previousElementSibling.previousElementSibling.value = "Name: " +  e.target.previousElementSibling.previousElementSibling.value;
+  e.target.disabled = true;
+  $(this).parent().find(".name").prop("disabled", true);
+  //$(this).parent().find(".name5").prop("disabled", true);
+
+$(this).parent().find(".name").clone().appendTo(box);
+$(this).parent().find(".name5").clone(true).appendTo(box);
+  $("<div id=\"divCheckbox\" style=\"display: none;\">").appendTo(box);
+  
+  document.getElementsByClassName("tab-name")[0].appendChild(box);
+  //e.target.previousElementSibling.previousElementSibling.value = "";
+	});
+	$( ".btn-a" ).click(function(e) {
+var box = document.createElement("div");
+box.setAttribute("style", "display: flex; flex-flow: row nowrap; justify-content: flex-start; align-items: flex-start;");
+e.target.previousElementSibling.previousElementSibling.value = "Age: " +  e.target.previousElementSibling.previousElementSibling.value;
+e.target.disabled = true;
+  $(this).parent().find(".age").prop("disabled", true);
+//  $(this).parent().find(".age5").prop("disabled", true);
+$(this).parent().find(".age").clone().appendTo(box);
+$(this).parent().find(".age5").clone(true).appendTo(box);
+$("<div id=\"divCheckbox\" style=\"display: none;\">").appendTo(box);	
+//e.target.previousElementSibling.previousElementSibling.value = "";
+  
+document.getElementsByClassName("tab-age")[0].appendChild(box);
+});
+	$( ".btn-o" ).click(function(e) {
+var box = document.createElement("div");
+box.setAttribute("style", "display: flex; flex-flow: row nowrap; justify-content: flex-start; align-items: flex-start;");
+e.target.previousElementSibling.previousElementSibling.value = "Occupation: " +  e.target.previousElementSibling.previousElementSibling.value;
+e.target.disabled = true;
+  $(this).parent().find(".occupation").prop("disabled", true);
+//  $(this).parent().find(".occupation5").prop("disabled", true);
+$(this).parent().find(".occupation").clone().appendTo(box);
+$(this).parent().find(".occupation5").clone(true).appendTo(box);
+$("<div id=\"divCheckbox\" style=\"display: none;\">").appendTo(box);	
+
+//e.target.previousElementSibling.previousElementSibling.value = "";
+  
+
+document.getElementsByClassName("tab-occupation")[0].appendChild(box);
+  });
+	$( ".btn-g" ).click(function(e) {
+var box = document.createElement("div");
+box.setAttribute("style", "display: flex; flex-flow: row nowrap; justify-content: flex-start; align-items: flex-start;");
+e.target.previousElementSibling.previousElementSibling.value = "Goals: " +  e.target.previousElementSibling.previousElementSibling.value;
+  e.target.disabled = true;
+  $(this).parent().find(".goals").prop("disabled", true);
+//  $(this).parent().find(".goals5").prop("disabled", true);
+$(this).parent().find(".goals").clone().appendTo(box);
+$(this).parent().find(".goals5").clone(true).appendTo(box);
+$("<div id=\"divCheckbox\" style=\"display: none;\">").appendTo(box);
+//e.target.previousElementSibling.previousElementSibling.value = "";
+
+
+document.getElementsByClassName("tab-goals")[0].appendChild(box);
+	});
+$(".ir").click(function(){
+ $(this).prev().remove();
+});	
+$(".ir").click(function(){
+ $(this).remove();
+});
+
+$(".Image5").click(function(){
+ $(this).prev().remove();
+});
+$(".Image5").click(function(){
+ $(this).parent().filter("#wrapper").remove();
+});
+
+$(".Image5").click(function(){
+ $(this).remove();
+});
+
+$(".name5").click(function(){
+ $(this).prev().remove();
+});
+$(".name5").click(function(){
+ $(this).next().remove();
+});
+$(".name5").click(function(){
+ $(this).remove();
+});
+$(".age5").click(function(){
+ $(this).prev().remove();
+});
+$(".age5").click(function(){
+ $(this).next().remove();
+});
+$(".age5").click(function(){
+ $(this).remove();
+});
+
+$(".occupation5").click(function(){
+ $(this).prev().remove();
+});
+
+$(".occupation5").click(function(){
+ $(this).next().remove();
+});
+$(".occupation5").click(function(){
+ $(this).remove();
+});
+$(".goals5").click(function(){
+ $(this).prev().remove();
+});
+$(".goals5").click(function(){
+ $(this).next().remove();
+});
+$(".goals5").click(function(){
+ $(this).remove();
+});
+$(".goals5").click(function(){
+ $(this).next().remove();
+});
+$(".1").click(function(){
+ $(this).prev().remove();
+});
+$(".1").click(function(){
+ $(this).prev().remove();
+});
+$(".1").click(function(){
+ $(this).next().remove();
+});
+$(".1").click(function(){
+ $(this).remove();
+});$(".1").click(function(){
+ $(this).parent().remove();
+});
+
+			
+$("input[type=text]").on("keyup", function () {
+  //console.log($(this).val());
+  if ($(this).val() == "") {
+	$(this).next().next().prop("disabled", true);
+  } else {
+	$(this).next().next().prop("disabled", false);
+}
+});
+
+$("input[type=file]").on("change", function (e) {
+  //console.log($(this).val());
+  if ($(this).val() == "") {
+	  e.target.nextElementSibling.nextElementSibling.disabled = true;
+	//$(this).next(".btn-i").prop("disabled", true);
+  } else {
+	  e.target.nextElementSibling.nextElementSibling.disabled = false;
+	//$(this).next(".btn-i").prop("disabled", false);
+}
+});
+
+$("input[value=Upload]").prop("disabled", true);
+//$("input.btn-i").prop("disabled", false);
+
+
+
+</script>
+</html>
